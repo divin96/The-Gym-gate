@@ -7,44 +7,83 @@
 	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="m-0 p-0">
-	<header >
-		<div class="thefirstribbonontop hidden">
-			<p>Become an Agent</p>
-			<p>Partenership</p>
-			<div class="theflagpart">
-				<p>EN</p>
-			</div>
-		</div>
-		<nav class="relative flex bg-[#F6F6F6] items-center gap-6 px-6 py-6">
-			<div class="flex-1 order-1">
-				<img src="images/favicon (1).ico" class="thelogo  w-13 h-13">
-			</div>
-			<input type="checkbox" id="menu" class="peer hidden">
-			<label for="menu" class="w-4 h-4 flex flex-col gap-1 order-4">
-				<div class="w-6 h-1 bg-black rounded"></div>
-				<div class="w-6 h-1 bg-black rounded"></div>
-				<div class="w-6 h-1 bg-black rounded"></div>
-			</label>
-			<ul class="thethingsinbetween absolute top-12 bg-[#FCFCFC] peer-checked:flex flex-col gap-2 hidden transition-all duration-130">
-				<li class="w-full py-2 font-bold">Universities</li>
-				<li class="w-full py-2 font-bold">Masters</li>
-				<li class="w-full py-2 font-bold">Language Schools</li>
-				<li class="w-full py-2 font-bold">Summer Schools</li>
-				<li class="w-full py-2 font-bold">High School</li>
-				<li class="w-full py-2 font-bold border-t-1">Become an Agent</li>
-				<li class="w-full py-2 font-bold ">Partenerships</li>
-				<li class="w-full py-2 font-bold ">Login</li>
-			</ul>
-			<div>
-				<img class="thesearchimge order-2">
-				<button class="hidden">login</button>
-			</div>
-			<div class="theflagpart order-3">
-				<p class="text-md"><img src="images/united-kingdom.png"class="inline-block w-4 h-4 rounded">EN</p>
-			</div>
-			
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="1.5" stroke="currentColor" class="hidden">
+  <symbol id="search" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/>
+  </symbol>
+</svg>
 
-		</nav>
+<header>
+  <nav class="relative flex bg-[#F6F6F6] items-center gap-3 px-5 py-4 shadow-sm">
+
+    <div class="flex-1">
+      <img src="images/favicon (1).ico" class="w-12 h-12">
+    </div>
+    <button class="p-1.5">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+        <use href="#search"></use>
+      </svg>
+    </button>
+    <button class="flex items-center gap-1 text-sm font-medium">
+      <img src="images/united-kingdom.png" class="w-4 h-4 rounded-full">
+      <span>EN</span>
+      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/>
+      </svg>
+    </button>
+
+    <!-- Hamburger toggle -->
+    <input type="checkbox" id="menu" class="peer hidden">
+    <label for="menu" class="flex flex-col justify-center gap-[5px] cursor-pointer p-1">
+      <span class="block w-5 h-0.5 bg-gray-800 rounded"></span>
+      <span class="block w-5 h-0.5 bg-gray-800 rounded"></span>
+      <span class="block w-5 h-0.5 bg-gray-800 rounded"></span>
+    </label>
+    <ul class="absolute top-full left-0 right-0 bg-[#FCFCFC] z-50
+               hidden peer-checked:flex flex-col
+               py-2 shadow-md">
+      <li>
+        <a href="#" class="block px-6 py-3 text-[15px] text-gray-900">Home</a>
+      </li>
+      <li class="flex items-center justify-between px-6 py-3 cursor-pointer">
+        <span class="text-[15px] text-gray-900">Universities</span>
+        <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/>
+        </svg>
+      </li>
+      <li>
+        <a href="#" class="block px-6 py-3 text-[15px] text-gray-900">Masters</a>
+      </li>
+      <li class="flex items-center justify-between px-6 py-3 cursor-pointer">
+        <span class="text-[15px] text-gray-900">Language Schools</span>
+        <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/>
+        </svg>
+      </li>
+      <li class="flex items-center justify-between px-6 py-3 cursor-pointer">
+        <span class="text-[15px] text-gray-900">Summer Schools</span>
+        <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/>
+        </svg>
+      </li>
+      <li>
+        <a href="#" class="block px-6 py-3 text-[15px] text-gray-900">High School</a>
+      </li>
+
+      <!-- Divider gap before secondary links -->
+      <li class="mt-3 border-t border-gray-100">
+        <a href="#" class="block px-6 py-3 text-[15px] text-gray-900">Become an Agent</a>
+      </li>
+      <li>
+        <a href="#" class="block px-6 py-3 text-[15px] text-gray-900">Partnership</a>
+      </li>
+      <li>
+        <a href="#" class="block px-6 py-3 text-[15px] text-gray-900">Login</a>
+      </li>
+    </ul>
+
+  </nav>
+</header>
 		<div class="themainpartoftheheader">
 			<h1>Find Your Perfect University, Language School or Summer Schools Program</h1>
 			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
