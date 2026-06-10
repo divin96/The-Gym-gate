@@ -1,131 +1,271 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body class="m-0 p-0">
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="1.5" stroke="currentColor" class="hidden">
-  <symbol id="search" viewBox="0 0 24 24">
-    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/>
-  </symbol>
-</svg>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+    <body class="m-0 p-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="1.5" stroke="currentColor" class="hidden">
+            <symbol id="search" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/>
+            </symbol>
+        </svg>
+        <header>
+            <nav class="relative flex bg-[#F6F6F6] items-center gap-3 px-5 py-4 shadow-sm">
+                <div class="flex-1">
+                    <img src="images/favicon (1).ico" class="w-12 h-12">
+                </div>
+                <button class="p-1.5">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                        <use href="#search"></use>
+                    </svg>
+                </button>
+                <button class="flex items-center gap-1 text-sm font-medium">
+                    <img src="images/united-kingdom.png" class="w-4 h-4 rounded-full">
+                    <span>EN</span>
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/>
+                    </svg>
+                </button>
+                <input type="checkbox" id="menu" class="peer hidden">
+                <label for="menu" class="flex flex-col justify-center gap-[5px] cursor-pointer p-1">
+                <span class="block w-5 h-0.5 bg-gray-800 rounded"></span>
+                <span class="block w-5 h-0.5 bg-gray-800 rounded"></span>
+                <span class="block w-5 h-0.5 bg-gray-800 rounded"></span>
+                </label>
+                <ul class="absolute top-full left-0 right-0 bg-[#FCFCFC] z-50
+                    hidden peer-checked:flex flex-col
+                    py-2 shadow-md">
+                    <li>
+                        <a href="#" class="block px-6 py-3 text-[15px] text-gray-900">Home</a>
+                    </li>
+                    <li class="flex items-center justify-between px-6 py-3 cursor-pointer">
+                        <span class="text-[15px] text-gray-900">Universities</span>
+                        <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/>
+                        </svg>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-6 py-3 text-[15px] text-gray-900">Masters</a>
+                    </li>
+                    <li class="flex items-center justify-between px-6 py-3 cursor-pointer">
+                        <span class="text-[15px] text-gray-900">Language Schools</span>
+                        <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/>
+                        </svg>
+                    </li>
+                    <li class="flex items-center justify-between px-6 py-3 cursor-pointer">
+                        <span class="text-[15px] text-gray-900">Summer Schools</span>
+                        <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/>
+                        </svg>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-6 py-3 text-[15px] text-gray-900">High School</a>
+                    </li>
+                    <li class="mt-3 border-t border-gray-100">
+                        <a href="#" class="block px-6 py-3 text-[15px] text-gray-900">Become an Agent</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-6 py-3 text-[15px] text-gray-900">Partnership</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-6 py-3 text-[15px] text-gray-900">Login</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class=" relative flex flex-col gap-5 px-7 bg-[url('images/header.jpeg')] bg-cover bg-center bg-no-repeat h-115">
+            	<div class="absolute inset-0 bg-white/20 pointer-events-none"></div>
+                <h1 class="text-white text-3xl font-bold">Find Your Perfect University, Language School or Summer Schools Program</h1>
+                <p class="text-white"> Uni4edu simplifies the journey to studying abroad by bringing top institutions worldwide into a single digital platform. Manage your entire process—from school selection to application—directly within the system and achieve your academic and career goals online.  
+                </p>
+                <div class="w-full flex flex-col gap-2 text-center pt-3">
+                    <button class="text-white bg-[#4DC7DC] rounded-md cursor-pointer py-2 hover:opacity-50">Explore Programs</button>
+                    <button class="text-[#4DC7DC] bg-white rounded-md cursor-pointer py-2 hover:opacity-50">Get Free Advice</button>
+                </div>
+            </div>
+             <div class="bg-white rounded-2xl m-3 shadow-md overflow-hidden">
 
-<header>
-  <nav class="relative flex bg-[#F6F6F6] items-center gap-3 px-5 py-4 shadow-sm">
-
-    <div class="flex-1">
-      <img src="images/favicon (1).ico" class="w-12 h-12">
+    <div class="flex items-center gap-4 px-4 pt-4 pb-3 overflow-x-auto">
+      <label class="flex items-center gap-1.5 cursor-pointer shrink-0">
+        <input type="radio" name="bar-tab" value="university" checked onchange="switchTab('university')">
+        <span class="text-[13px] text-gray-700">University Programs</span>
+      </label>
+      <label class="flex items-center gap-1.5 cursor-pointer shrink-0">
+        <input type="radio" name="bar-tab" value="language" onchange="switchTab('language')">
+        <span class="text-[13px] text-gray-700">Language Schools</span>
+      </label>
+      <label class="flex items-center gap-1.5 cursor-pointer shrink-0">
+        <input type="radio" name="bar-tab" value="summer" onchange="switchTab('summer')">
+        <span class="text-[13px] text-gray-700">Summer Schools</span>
+      </label>
     </div>
-    <button class="p-1.5">
-      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-        <use href="#search"></use>
-      </svg>
-    </button>
-    <button class="flex items-center gap-1 text-sm font-medium">
-      <img src="images/united-kingdom.png" class="w-4 h-4 rounded-full">
-      <span>EN</span>
-      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/>
-      </svg>
-    </button>
 
-    <!-- Hamburger toggle -->
-    <input type="checkbox" id="menu" class="peer hidden">
-    <label for="menu" class="flex flex-col justify-center gap-[5px] cursor-pointer p-1">
-      <span class="block w-5 h-0.5 bg-gray-800 rounded"></span>
-      <span class="block w-5 h-0.5 bg-gray-800 rounded"></span>
-      <span class="block w-5 h-0.5 bg-gray-800 rounded"></span>
-    </label>
-    <ul class="absolute top-full left-0 right-0 bg-[#FCFCFC] z-50
-               hidden peer-checked:flex flex-col
-               py-2 shadow-md">
-      <li>
-        <a href="#" class="block px-6 py-3 text-[15px] text-gray-900">Home</a>
-      </li>
-      <li class="flex items-center justify-between px-6 py-3 cursor-pointer">
-        <span class="text-[15px] text-gray-900">Universities</span>
-        <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/>
-        </svg>
-      </li>
-      <li>
-        <a href="#" class="block px-6 py-3 text-[15px] text-gray-900">Masters</a>
-      </li>
-      <li class="flex items-center justify-between px-6 py-3 cursor-pointer">
-        <span class="text-[15px] text-gray-900">Language Schools</span>
-        <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/>
-        </svg>
-      </li>
-      <li class="flex items-center justify-between px-6 py-3 cursor-pointer">
-        <span class="text-[15px] text-gray-900">Summer Schools</span>
-        <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/>
-        </svg>
-      </li>
-      <li>
-        <a href="#" class="block px-6 py-3 text-[15px] text-gray-900">High School</a>
-      </li>
+    <div class="flex items-center gap-3 px-4 pb-4">
+      <div class="flex items-center gap-2 flex-1 border border-gray-200 rounded-xl px-3 py-2.5 cursor-pointer" onclick="openModal()">
 
-      <!-- Divider gap before secondary links -->
-      <li class="mt-3 border-t border-gray-100">
-        <a href="#" class="block px-6 py-3 text-[15px] text-gray-900">Become an Agent</a>
-      </li>
-      <li>
-        <a href="#" class="block px-6 py-3 text-[15px] text-gray-900">Partnership</a>
-      </li>
-      <li>
-        <a href="#" class="block px-6 py-3 text-[15px] text-gray-900">Login</a>
-      </li>
-    </ul>
+        <svg class="w-4 h-4 text-gray-400 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 5h4m10 0h4M3 12h8m4 0h5M3 19h2m14 0h2M7 5a2 2 0 1 0 4 0 2 2 0 0 0-4 0Zm4 7a2 2 0 1 0 4 0 2 2 0 0 0-4 0Zm-4 7a2 2 0 1 0 4 0 2 2 0 0 0-4 0Z"/>
+        </svg>
+        <span class="text-[13px] text-gray-400">Search</span>
+      </div>
+      <button onclick="openModal()" class="bg-blue-600 hover:bg-blue-700 active:scale-95 transition-all text-white p-2.5 rounded-xl shrink-0">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
 
-  </nav>
-</header>
-		<div class="themainpartoftheheader">
-			<h1>Find Your Perfect University, Language School or Summer Schools Program</h1>
-			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat.  </p>
-			<div>
-				<button>Explore Programs</button>
-				<button>Get Free Advice</button>
-			</div>
-		</div>
-		<div class="thesearchbarwithschools">
-			<div class="thefirstpart">
-				<button>University Programs</button>
-				<ul>
-					<li>location</li>
-					<li>institution</li>
-					<li>discpline</li>
-				</ul>
-			</div>
-			<div class="thesecondpart">
-				<button>University Programs</button>
-				<ul>
-					<li>location</li>
-					<li>Course model</li>
-					<li>start date</li>
-					<li>duration</li>
-				</ul>
-			</div>
-			<div class="thethirdpart">
-				<button>University Programs</button>
-				<ul>
-					<li>location</li>
-					<li>age</li>
-					<li>theme</li>
-					<li>duration</li>
-				</ul>
-			</div>
-			<div>
-				<button class="thesearchimge"></button>
-			</div>
-		</div>
-	</header>
-</body>
+  <div id="modal" class="fixed inset-0 bg-black/60 z-50 hidden flex-col justify-end" onclick="closeOnBackdrop(event)">
+    <div id="modalPanel" class="bg-white rounded-t-2xl pb-8 max-h-[90vh] overflow-y-auto slide-up">
+
+      <!-- Modal tabs -->
+      <div class="flex items-center gap-4 px-5 pt-5 pb-4 overflow-x-auto border-b border-gray-100">
+        <label class="flex items-center gap-1.5 cursor-pointer shrink-0">
+          <input type="radio" name="modal-tab" value="university" checked onchange="switchTab('university')">
+          <span class="text-[13px] text-gray-700">University Programs</span>
+        </label>
+        <label class="flex items-center gap-1.5 cursor-pointer shrink-0">
+          <input type="radio" name="modal-tab" value="language" onchange="switchTab('language')">
+          <span class="text-[13px] text-gray-700">Language Schools</span>
+        </label>
+        <label class="flex items-center gap-1.5 cursor-pointer shrink-0">
+          <input type="radio" name="modal-tab" value="summer" onchange="switchTab('summer')">
+          <span class="text-[13px] text-gray-700">Summer Schools</span>
+        </label>
+      </div>
+
+      <!-- ── University filters ── -->
+      <div id="filters-university" class="px-5 pt-5 flex flex-col gap-5">
+        <div class="filter-field">
+          <p class="text-[11px] font-semibold text-gray-800 uppercase tracking-wide mb-2">Location</p>
+          <div class="flex justify-between items-center border-b border-gray-200 pb-2 cursor-pointer">
+            <span class="text-[15px] text-gray-400">Select Location</span>
+            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/></svg>
+          </div>
+        </div>
+        <div class="filter-field">
+          <p class="text-[11px] font-semibold text-gray-800 uppercase tracking-wide mb-2">Institution</p>
+          <div class="flex justify-between items-center border-b border-gray-200 pb-2 cursor-pointer">
+            <span class="text-[15px] text-gray-400">Select Institution</span>
+            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/></svg>
+          </div>
+        </div>
+        <div class="filter-field">
+          <p class="text-[11px] font-semibold text-gray-800 uppercase tracking-wide mb-2">Discipline</p>
+          <div class="flex justify-between items-center border-b border-gray-200 pb-2 cursor-pointer">
+            <span class="text-[15px] text-gray-400">Select Discipline</span>
+            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/></svg>
+          </div>
+        </div>
+        <div class="filter-field">
+          <p class="text-[11px] font-semibold text-gray-800 uppercase tracking-wide mb-2">Program Level</p>
+          <div class="flex justify-between items-center border-b border-gray-200 pb-2 cursor-pointer">
+            <span class="text-[15px] text-gray-400">Select Program Level</span>
+            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div id="filters-language" class="hidden px-5 pt-5 flex flex-col gap-5">
+        <div class="filter-field">
+          <p class="text-[11px] font-semibold text-gray-800 uppercase tracking-wide mb-2">Location</p>
+          <div class="flex justify-between items-center border-b border-gray-200 pb-2 cursor-pointer">
+            <span class="text-[15px] text-gray-400">Select Location</span>
+            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/></svg>
+          </div>
+        </div>
+        <div class="filter-field">
+          <p class="text-[11px] font-semibold text-gray-800 uppercase tracking-wide mb-2">Course Model</p>
+          <div class="flex justify-between items-center border-b border-gray-200 pb-2 cursor-pointer">
+            <span class="text-[15px] text-gray-400">Select Course Model</span>
+            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/></svg>
+          </div>
+        </div>
+        <div class="filter-field">
+          <p class="text-[11px] font-semibold text-gray-800 uppercase tracking-wide mb-2">Start Date</p>
+          <div class="flex justify-between items-center border-b border-gray-200 pb-2 cursor-pointer">
+            <span class="text-[15px] text-gray-400">Select Start Date</span>
+            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/></svg>
+          </div>
+        </div>
+        <div class="filter-field">
+          <p class="text-[11px] font-semibold text-gray-800 uppercase tracking-wide mb-2">Duration</p>
+          <div class="flex justify-between items-center border-b border-gray-200 pb-2 cursor-pointer">
+            <span class="text-[15px] text-gray-400">Select Duration</span>
+            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/></svg>
+          </div>
+        </div>
+      </div>
+      <div id="filters-summer" class="hidden px-5 pt-5 flex flex-col gap-5">
+        <div class="filter-field">
+          <p class="text-[11px] font-semibold text-gray-800 uppercase tracking-wide mb-2">Location</p>
+          <div class="flex justify-between items-center border-b border-gray-200 pb-2 cursor-pointer">
+            <span class="text-[15px] text-gray-400">Select Location</span>
+            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/></svg>
+          </div>
+        </div>
+        <div class="filter-field">
+          <p class="text-[11px] font-semibold text-gray-800 uppercase tracking-wide mb-2">Age</p>
+          <div class="flex justify-between items-center border-b border-gray-200 pb-2 cursor-pointer">
+            <span class="text-[15px] text-gray-400">Select Age</span>
+            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/></svg>
+          </div>
+        </div>
+        <div class="filter-field">
+          <p class="text-[11px] font-semibold text-gray-800 uppercase tracking-wide mb-2">Theme</p>
+          <div class="flex justify-between items-center border-b border-gray-200 pb-2 cursor-pointer">
+            <span class="text-[15px] text-gray-400">Select Theme</span>
+            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/></svg>
+          </div>
+        </div>
+        <div class="filter-field">
+          <p class="text-[11px] font-semibold text-gray-800 uppercase tracking-wide mb-2">Duration</p>
+          <div class="flex justify-between items-center border-b border-gray-200 pb-2 cursor-pointer">
+            <span class="text-[15px] text-gray-400">Select Duration</span>
+            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="px-5 mt-8">
+        <button class="w-full bg-blue-600 hover:bg-blue-700 active:scale-95 transition-all text-white py-4 rounded-2xl text-[15px] font-medium">
+          Search
+        </button>
+      </div>
+
+    </div>
+  </div>
+        </header>
+    </body>
 </html>
+ <script>
+    let currentTab = 'university';
+
+    function switchTab(tab) {
+      currentTab = tab;
+
+      document.querySelectorAll(`input[type="radio"][value="${tab}"]`).forEach(r => r.checked = true);
+
+      ['university', 'language', 'summer'].forEach(t => {
+        const el = document.getElementById(`filters-${t}`);
+        el.classList.toggle('hidden', t !== tab);
+      });
+    }
+
+    function openModal() {
+      document.querySelectorAll(`input[name="modal-tab"][value="${currentTab}"]`).forEach(r => r.checked = true);
+      const modal = document.getElementById('modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeOnBackdrop(e) {
+      if (e.target === document.getElementById('modal')) {
+        document.getElementById('modal').classList.add('hidden');
+        document.getElementById('modal').classList.remove('flex');
+      }
+    }
+  </script>
