@@ -470,11 +470,11 @@
                 <!-- Find the Best Fit Carousel -->
                 <div class="w-full max-w-[1440px] mx-auto px-4 xl:px-24 mt-10">
                     <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8 px-2">Find the Best Fit for Your Goals</h2>
-                    <div class="relative">
-                        <button id="prev" class="hidden md:flex absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-9 h-9 bg-white rounded-full shadow items-center justify-center text-gray-500 hover:shadow-md transition-shadow text-lg font-light">&#8249;</button>
-                        <div id="track" class="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar">
+                    <div class="relative" data-carousel="bestfit">
+                        <button data-carousel-prev="bestfit" class="hidden md:flex absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-9 h-9 bg-white rounded-full shadow items-center justify-center text-gray-500 hover:shadow-md transition-shadow text-lg font-light">&#8249;</button>
+                        <div data-carousel-track="bestfit" class="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar">
                             <!-- Card 1 -->
-                            <div class="card snap-start shrink-0 w-[82%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-2xl p-5 flex flex-col shadow-[0_0_8px_2px_#78787829]">
+                            <div data-carousel-card="bestfit" class="snap-start shrink-0 w-[82%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-2xl p-5 flex flex-col shadow-[0_0_8px_2px_#78787829]">
                                 <div class="w-full h-44 bg-gray-200 rounded-xl mb-5 overflow-hidden">
                                     <img src="images/grad.jpeg" class="w-full h-full object-cover" alt="University Programs">
                                 </div>
@@ -484,7 +484,7 @@
                                 <a href="#" class="self-start inline-flex items-center gap-2 text-sm font-medium text-black px-2 py-2 rounded transition-colors" style="background-color:#E8EEFF">Learn More &nbsp;&#8594;</a>
                             </div>
                             <!-- Card 2 -->
-                            <div class="card snap-start shrink-0 w-[82%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-2xl p-5 flex flex-col shadow-[0_0_8px_2px_#78787829]">
+                            <div data-carousel-card="bestfit" class="snap-start shrink-0 w-[82%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-2xl p-5 flex flex-col shadow-[0_0_8px_2px_#78787829]">
                                 <div class="w-full h-44 bg-gray-200 rounded-xl mb-5 overflow-hidden">
                                     <img src="images/grad.jpeg" class="w-full h-full object-cover" alt="Language Schools">
                                 </div>
@@ -494,7 +494,7 @@
                                 <a href="#" class="self-start inline-flex items-center gap-2 text-sm font-medium text-black px-2 py-2 rounded transition-colors" style="background-color:#FAECF8">Learn More &nbsp;&#8594;</a>
                             </div>
                             <!-- Card 3 -->
-                            <div class="card snap-start shrink-0 w-[82%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-2xl p-5 flex flex-col shadow-[0_0_8px_2px_#78787829]">
+                            <div data-carousel-card="bestfit" class="snap-start shrink-0 w-[82%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-2xl p-5 flex flex-col shadow-[0_0_8px_2px_#78787829]">
                                 <div class="w-full h-44 bg-gray-200 rounded-xl mb-5 overflow-hidden">
                                     <img src="images/grad.jpeg" class="w-full h-full object-cover" alt="Summer Winter Schools">
                                 </div>
@@ -504,7 +504,7 @@
                                 <a href="#" class="self-start inline-flex items-center gap-2 text-sm font-medium text-black px-2 py-2 rounded transition-colors" style="background-color:#FFE7F0">Learn More &nbsp;&#8594;</a>
                             </div>
                             <!-- Card 4 -->
-                            <div class="card snap-start shrink-0 w-[82%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-2xl p-5 flex flex-col shadow-[0_0_8px_2px_#78787829]">
+                            <div data-carousel-card="bestfit" class="snap-start shrink-0 w-[82%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-2xl p-5 flex flex-col shadow-[0_0_8px_2px_#78787829]">
                                 <div class="w-full h-44 bg-gray-200 rounded-xl mb-5 overflow-hidden">
                                     <img src="images/grad.jpeg" class="w-full h-full object-cover" alt="High School Programs">
                                 </div>
@@ -514,9 +514,9 @@
                                 <a href="#" class="self-start inline-flex items-center gap-2 text-sm font-medium text-black px-2 py-2 rounded transition-colors" style="background-color:#DAD3FD">Learn More &nbsp;&#8594;</a>
                             </div>
                         </div>
-                        <button id="next" class="hidden md:flex absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-9 h-9 bg-white rounded-full shadow items-center justify-center text-gray-500 hover:shadow-md transition-shadow text-lg font-light">&#8250;</button>
+                        <button data-carousel-next="bestfit" class="hidden md:flex absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-9 h-9 bg-white rounded-full shadow items-center justify-center text-gray-500 hover:shadow-md transition-shadow text-lg font-light">&#8250;</button>
                     </div>
-                    <div id="dots" class="flex justify-center gap-2 mt-6"></div>
+                    <div data-carousel-dots="bestfit" class="flex justify-center gap-2 mt-6"></div>
                 </div>
                 <!-- Webinar Section -->
                 <div class="max-w-[1440px] mx-auto xl:px-24 py-6 mt-4">
@@ -746,11 +746,11 @@
             <section class="w-full bg-[#F6F6F6] py-16 px-4 md:px-12 xl:px-0">
                 <div class="max-w-[1440px] mx-auto xl:px-24">
                     <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#2D2D2D] mb-8 md:mb-12 px-2">Discover the Best Places to Study</h2>
-                    <div class="relative">
-                        <button id="prev2" class="hidden md:flex absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-9 h-9 bg-white rounded-full shadow items-center justify-center text-gray-500 hover:shadow-md transition-shadow text-lg font-light">&#8249;</button>
-                        <div id="track2" class="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar px-2 pb-4">
+                    <div class="relative" data-carousel="places">
+                        <button data-carousel-prev="places" class="hidden md:flex absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-9 h-9 bg-white rounded-full shadow items-center justify-center text-gray-500 hover:shadow-md transition-shadow text-lg font-light">&#8249;</button>
+                        <div data-carousel-track="places" class="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar px-2 pb-4">
                             <!-- Card 1 -->
-                            <div class="card2 snap-start shrink-0 w-[85%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-xl p-5 flex flex-col shadow-[0px_0px_10px_0px_rgba(177,177,177,0.24)]">
+                            <div data-carousel-card="places" class="snap-start shrink-0 w-[85%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-xl p-5 flex flex-col shadow-[0px_0px_10px_0px_rgba(177,177,177,0.24)]">
                                 <div class="w-full h-40 mb-5 overflow-hidden flex items-center justify-center border-b border-gray-100 pb-3">
                                     <img src="images/countries.png" class="max-h-full object-contain" alt="Australia">
                                 </div>
@@ -758,7 +758,7 @@
                                 <p class="text-[13px] text-gray-500 leading-relaxed flex-1">Study in Australia — home to top-ranked universities and diverse programs. Explore courses, compare tuition fees, and apply to your ideal...</p>
                             </div>
                             <!-- Card 2 -->
-                            <div class="card2 snap-start shrink-0 w-[85%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-xl p-5 flex flex-col shadow-[0px_0px_10px_0px_rgba(177,177,177,0.24)]">
+                            <div data-carousel-card="places" class="snap-start shrink-0 w-[85%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-xl p-5 flex flex-col shadow-[0px_0px_10px_0px_rgba(177,177,177,0.24)]">
                                 <div class="w-full h-40 mb-5 overflow-hidden flex items-center justify-center border-b border-gray-100 pb-3">
                                     <img src="images/countries.png" class="max-h-full object-contain" alt="Canada">
                                 </div>
@@ -766,7 +766,7 @@
                                 <p class="text-[13px] text-gray-500 leading-relaxed flex-1">Study in Canada — Home to world-renowned universities, diverse cultures, and endless opportunities. Explore a wide range of programs,...</p>
                             </div>
                             <!-- Card 3 -->
-                            <div class="card2 snap-start shrink-0 w-[85%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-xl p-5 flex flex-col shadow-[0px_0px_10px_0px_rgba(177,177,177,0.24)]">
+                            <div data-carousel-card="places" class="snap-start shrink-0 w-[85%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-xl p-5 flex flex-col shadow-[0px_0px_10px_0px_rgba(177,177,177,0.24)]">
                                 <div class="w-full h-40 mb-5 overflow-hidden flex items-center justify-center border-b border-gray-100 pb-3">
                                     <img src="images/countries.png" class="max-h-full object-contain" alt="Germany">
                                 </div>
@@ -774,7 +774,7 @@
                                 <p class="text-[13px] text-gray-500 leading-relaxed flex-1">Discover top universities in Germany and earn highly respected degrees. Explore programs, compare tuition fees, and apply to the best school...</p>
                             </div>
                             <!-- Card 4 -->
-                            <div class="card2 snap-start shrink-0 w-[85%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-xl p-5 flex flex-col shadow-[0px_0px_10px_0px_rgba(177,177,177,0.24)]">
+                            <div data-carousel-card="places" class="snap-start shrink-0 w-[85%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-xl p-5 flex flex-col shadow-[0px_0px_10px_0px_rgba(177,177,177,0.24)]">
                                 <div class="w-full h-40 mb-5 overflow-hidden flex items-center justify-center border-b border-gray-100 pb-3">
                                     <img src="images/countries.png" class="max-h-full object-contain" alt="Italy">
                                 </div>
@@ -782,7 +782,7 @@
                                 <p class="text-[13px] text-gray-500 leading-relaxed flex-1">The most comprehensive platform for students who want to study at a university in Italy! Compare programs, cities, and universities to find the most...</p>
                             </div>
                             <!-- Card 5 -->
-                            <div class="card2 snap-start shrink-0 w-[85%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-xl p-5 flex flex-col shadow-[0px_0px_10px_0px_rgba(177,177,177,0.24)]">
+                            <div data-carousel-card="places" class="snap-start shrink-0 w-[85%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-xl p-5 flex flex-col shadow-[0px_0px_10px_0px_rgba(177,177,177,0.24)]">
                                 <div class="w-full h-40 mb-5 overflow-hidden flex items-center justify-center border-b border-gray-100 pb-3">
                                     <img src="images/countries.png" class="max-h-full object-contain" alt="Turkey">
                                 </div>
@@ -790,7 +790,7 @@
                                 <p class="text-[13px] text-gray-500 leading-relaxed flex-1">The most comprehensive platform for students who want to study at a university in Turkey! Let's find the most suitable education for you by...</p>
                             </div>
                             <!-- Card 6 -->
-                            <div class="card2 snap-start shrink-0 w-[85%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-xl p-5 flex flex-col shadow-[0px_0px_10px_0px_rgba(177,177,177,0.24)]">
+                            <div data-carousel-card="places" class="snap-start shrink-0 w-[85%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-xl p-5 flex flex-col shadow-[0px_0px_10px_0px_rgba(177,177,177,0.24)]">
                                 <div class="w-full h-40 mb-5 overflow-hidden flex items-center justify-center border-b border-gray-100 pb-3">
                                     <img src="images/countries.png" class="max-h-full object-contain" alt="UK">
                                 </div>
@@ -798,7 +798,7 @@
                                 <p class="text-[13px] text-gray-500 leading-relaxed flex-1">Discover top UK universities and globally recognized degrees. Explore programs, compare tuition fees, and apply to your ideal school in the...</p>
                             </div>
                             <!-- Card 7 -->
-                            <div class="card2 snap-start shrink-0 w-[85%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-xl p-5 flex flex-col shadow-[0px_0px_10px_0px_rgba(177,177,177,0.24)]">
+                            <div data-carousel-card="places" class="snap-start shrink-0 w-[85%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-xl p-5 flex flex-col shadow-[0px_0px_10px_0px_rgba(177,177,177,0.24)]">
                                 <div class="w-full h-40 mb-5 overflow-hidden flex items-center justify-center border-b border-gray-100 pb-3">
                                     <img src="images/countries.png" class="max-h-full object-contain" alt="USA">
                                 </div>
@@ -806,9 +806,9 @@
                                 <p class="text-[13px] text-gray-500 leading-relaxed flex-1">Study in the USA — home to world-leading universities and innovation hubs. Compare programs, find scholarships, and start your...</p>
                             </div>
                         </div>
-                        <button id="next2" class="hidden md:flex absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-9 h-9 bg-white rounded-full shadow items-center justify-center text-gray-500 hover:shadow-md transition-shadow text-lg font-light">&#8250;</button>
+                        <button data-carousel-next="places" class="hidden md:flex absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-9 h-9 bg-white rounded-full shadow items-center justify-center text-gray-500 hover:shadow-md transition-shadow text-lg font-light">&#8250;</button>
                     </div>
-                    <div id="dots2" class="flex justify-center gap-2 mt-6"></div>
+                    <div data-carousel-dots="places" class="flex justify-center gap-2 mt-6"></div>
                 </div>
             </section>
 
@@ -819,11 +819,11 @@
                         <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#2D2D2D] leading-tight">Latest News</h2>
                         <a href="#" class="text-sm font-bold text-[#546E7A] hover:underline underline-offset-4 decoration-2">View All</a>
                     </div>
-                    <div class="relative">
-                        <button id="prev3" class="hidden md:flex absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-9 h-9 bg-white rounded-full shadow items-center justify-center text-gray-500 hover:shadow-md transition-shadow text-lg font-light">&#8249;</button>
-                        <div id="track3" class="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar px-2 pb-4">
+                    <div class="relative" data-carousel="news">
+                        <button data-carousel-prev="news" class="hidden md:flex absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-9 h-9 bg-white rounded-full shadow items-center justify-center text-gray-500 hover:shadow-md transition-shadow text-lg font-light">&#8249;</button>
+                        <div data-carousel-track="news" class="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar px-2 pb-4">
                             <!-- Card 1 -->
-                            <div class="card3 snap-start shrink-0 w-[85%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-xl flex flex-col shadow-[0px_0px_10px_0px_rgba(177,177,177,0.24)] overflow-hidden border border-gray-100">
+                            <div data-carousel-card="news" class="snap-start shrink-0 w-[85%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-xl flex flex-col shadow-[0px_0px_10px_0px_rgba(177,177,177,0.24)] overflow-hidden border border-gray-100">
                                 <div class="w-full h-48 overflow-hidden">
                                     <img src="images/library_study.png" class="w-full h-full object-cover" alt="News">
                                 </div>
@@ -835,7 +835,7 @@
                                 </div>
                             </div>
                             <!-- Card 2 -->
-                            <div class="card3 snap-start shrink-0 w-[85%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-xl flex flex-col shadow-[0px_0px_10px_0px_rgba(177,177,177,0.24)] overflow-hidden border border-gray-100">
+                            <div data-carousel-card="news" class="snap-start shrink-0 w-[85%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-xl flex flex-col shadow-[0px_0px_10px_0px_rgba(177,177,177,0.24)] overflow-hidden border border-gray-100">
                                 <div class="w-full h-48 overflow-hidden">
                                     <img src="images/students_outdoor.png" class="w-full h-full object-cover" alt="News">
                                 </div>
@@ -847,7 +847,7 @@
                                 </div>
                             </div>
                             <!-- Card 3 -->
-                            <div class="card3 snap-start shrink-0 w-[85%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-xl flex flex-col shadow-[0px_0px_10px_0px_rgba(177,177,177,0.24)] overflow-hidden border border-gray-100">
+                            <div data-carousel-card="news" class="snap-start shrink-0 w-[85%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-xl flex flex-col shadow-[0px_0px_10px_0px_rgba(177,177,177,0.24)] overflow-hidden border border-gray-100">
                                 <div class="w-full h-48 overflow-hidden">
                                     <img src="images/university_building.png" class="w-full h-full object-cover" alt="News">
                                 </div>
@@ -859,7 +859,7 @@
                                 </div>
                             </div>
                             <!-- Card 4 -->
-                            <div class="card3 snap-start shrink-0 w-[85%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-xl flex flex-col shadow-[0px_0px_10px_0px_rgba(177,177,177,0.24)] overflow-hidden border border-gray-100">
+                            <div data-carousel-card="news" class="snap-start shrink-0 w-[85%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-xl flex flex-col shadow-[0px_0px_10px_0px_rgba(177,177,177,0.24)] overflow-hidden border border-gray-100">
                                 <div class="w-full h-48 overflow-hidden">
                                     <img src="images/campus_sports.png" class="w-full h-full object-cover" alt="News">
                                 </div>
@@ -871,7 +871,7 @@
                                 </div>
                             </div>
                             <!-- Card 5 -->
-                            <div class="card3 snap-start shrink-0 w-[85%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-xl flex flex-col shadow-[0px_0px_10px_0px_rgba(177,177,177,0.24)] overflow-hidden border border-gray-100">
+                            <div data-carousel-card="news" class="snap-start shrink-0 w-[85%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-xl flex flex-col shadow-[0px_0px_10px_0px_rgba(177,177,177,0.24)] overflow-hidden border border-gray-100">
                                 <div class="w-full h-48 overflow-hidden">
                                     <img src="images/english_textbook.png" class="w-full h-full object-cover" alt="News">
                                 </div>
@@ -883,7 +883,7 @@
                                 </div>
                             </div>
                             <!-- Card 6 -->
-                            <div class="card3 snap-start shrink-0 w-[85%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-xl flex flex-col shadow-[0px_0px_10px_0px_rgba(177,177,177,0.24)] overflow-hidden border border-gray-100">
+                            <div data-carousel-card="news" class="snap-start shrink-0 w-[85%] sm:w-[48%] xl:w-[calc(33.333%-11px)] bg-white rounded-xl flex flex-col shadow-[0px_0px_10px_0px_rgba(177,177,177,0.24)] overflow-hidden border border-gray-100">
                                 <div class="w-full h-48 overflow-hidden">
                                     <img src="images/graduate_celebration.png" class="w-full h-full object-cover" alt="News">
                                 </div>
@@ -895,9 +895,9 @@
                                 </div>
                             </div>
                         </div>
-                        <button id="next3" class="hidden md:flex absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-9 h-9 bg-white rounded-full shadow items-center justify-center text-gray-500 hover:shadow-md transition-shadow text-lg font-light">&#8250;</button>
+                        <button data-carousel-next="news" class="hidden md:flex absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-9 h-9 bg-white rounded-full shadow items-center justify-center text-gray-500 hover:shadow-md transition-shadow text-lg font-light">&#8250;</button>
                     </div>
-                    <div id="dots3" class="flex justify-center gap-2 mt-6"></div>
+                    <div data-carousel-dots="news" class="flex justify-center gap-2 mt-6"></div>
                 </div>
             </section>
 
