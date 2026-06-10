@@ -6,28 +6,44 @@
 	<title></title>
 	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-	<header>
-		<div class="thefirstribbonontop">
+<body class="m-0 p-0">
+	<header >
+		<div class="thefirstribbonontop hidden">
 			<p>Become an Agent</p>
 			<p>Partenership</p>
 			<div class="theflagpart">
 				<p>EN</p>
 			</div>
 		</div>
-		<nav>
-			<img class="thelogo">
-			<ul class="thethingsinbetween">
-				<li>Universities</li>
-				<li>Masters</li>
-				<li>Language Schools</li>
-				<li>Summer Schools</li>
-				<li>High School</li>
+		<nav class="relative flex bg-[#F6F6F6] items-center gap-6 px-6 py-6">
+			<div class="flex-1 order-1">
+				<img src="images/favicon (1).ico" class="thelogo  w-13 h-13">
+			</div>
+			<input type="checkbox" id="menu" class="peer hidden">
+			<label for="menu" class="w-4 h-4 flex flex-col gap-1 order-4">
+				<div class="w-6 h-1 bg-black rounded"></div>
+				<div class="w-6 h-1 bg-black rounded"></div>
+				<div class="w-6 h-1 bg-black rounded"></div>
+			</label>
+			<ul class="thethingsinbetween absolute top-12 bg-[#FCFCFC] peer-checked:flex flex-col gap-2 hidden transition-all duration-130">
+				<li class="w-full py-2 font-bold">Universities</li>
+				<li class="w-full py-2 font-bold">Masters</li>
+				<li class="w-full py-2 font-bold">Language Schools</li>
+				<li class="w-full py-2 font-bold">Summer Schools</li>
+				<li class="w-full py-2 font-bold">High School</li>
+				<li class="w-full py-2 font-bold border-t-1">Become an Agent</li>
+				<li class="w-full py-2 font-bold ">Partenerships</li>
+				<li class="w-full py-2 font-bold ">Login</li>
 			</ul>
 			<div>
-				<img class="thesearchimge">
-				<button>login</button>
+				<img class="thesearchimge order-2">
+				<button class="hidden">login</button>
 			</div>
+			<div class="theflagpart order-3">
+				<p class="text-md"><img src="images/united-kingdom.png"class="inline-block w-4 h-4 rounded">EN</p>
+			</div>
+			
+
 		</nav>
 		<div class="themainpartoftheheader">
 			<h1>Find Your Perfect University, Language School or Summer Schools Program</h1>
